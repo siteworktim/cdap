@@ -118,7 +118,7 @@
     <hbase11.version>1.1.1</hbase11.version>
     <hbase12cdh570.version>1.2.0-cdh5.7.0</hbase12cdh570.version>
     <hbase96.version>0.96.2-hadoop2</hbase96.version>
-    <hbase98.version>0.98.6.1-hadoop2</hbase98.version>
+    <hbase98.version>1.2.2</hbase98.version>
     <hive.version>1.2.1</hive.version>
     <hsql.version>2.2.4</hsql.version>
     <http.component.version>4.2.5</http.component.version>
@@ -2160,14 +2160,14 @@
                       <name>package.name</name>
                       <value>${project.artifactId}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
                       <name>service.name</name>
                       <value>${original.service.name}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
@@ -2266,7 +2266,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
@@ -2369,7 +2369,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
