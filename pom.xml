@@ -124,7 +124,7 @@
     <http.component.version>4.2.5</http.component.version>
     <javamail.version>1.4.1</javamail.version>
     <jetty.version>6.1.22</jetty.version>
-    <jetty8.version>8.1.15.v20140411</jetty8.version>
+    <jetty8.version>10.0.10</jetty8.version>
     <jline.version>2.12</jline.version>
     <jsch.version>0.1.42</jsch.version>
     <junit.version>4.11</junit.version>
@@ -2160,14 +2160,14 @@
                       <name>package.name</name>
                       <value>${project.artifactId}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
                       <name>service.name</name>
                       <value>${original.service.name}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
@@ -2266,7 +2266,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
@@ -2369,7 +2369,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
