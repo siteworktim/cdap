@@ -143,7 +143,7 @@
     "sockjs-client": "1.1.1",
     "svg4everybody": "2.1.7",
     "whatwg-fetch": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz",
-    "yml-loader": "1.1.0"
+    "yml-loader": "2.0.0"
   },
   "engines": {
     "node": ">= 4.5.0"
