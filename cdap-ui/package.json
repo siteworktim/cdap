@@ -140,7 +140,7 @@
     "serve-favicon": "2.3.0",
     "shortid": "2.2.6",
     "sockjs": "0.3.15",
-    "sockjs-client": "1.1.1",
+    "sockjs-client": "1.2.0",
     "svg4everybody": "2.1.7",
     "whatwg-fetch": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz",
     "yml-loader": "1.1.0"
