@@ -109,9 +109,9 @@
     <geronimo.version>2.0.0</geronimo.version>
     <grok.version>0.1.0</grok.version>
     <gson.version>2.2.4</gson.version>
-    <guava.version>13.0.1</guava.version>
+    <guava.version>30.0-android</guava.version>
     <guice.version>3.0</guice.version>
-    <hadoop.version>2.3.0</hadoop.version>
+    <hadoop.version>3.3.1</hadoop.version>
     <hbase10.version>1.0.1.1</hbase10.version>
     <hbase10cdh.version>1.0.0-cdh5.4.4</hbase10cdh.version>
     <hbase10cdh550.version>1.0.0-cdh5.5.0</hbase10cdh550.version>
@@ -134,7 +134,7 @@
     <mockftp.version>2.6</mockftp.version>
     <mockito.version>1.9.5</mockito.version>
     <mysql.version>5.1.21</mysql.version>
-    <netty.http.version>0.16.0</netty.http.version>
+    <netty.http.version>1.0.0</netty.http.version>
     <netty.version>3.6.6.Final</netty.version>
     <quartz.version>2.2.0</quartz.version>
     <resteasy.version>3.0.8.Final</resteasy.version>
@@ -145,7 +145,7 @@
     <shiro.version>1.2.1</shiro.version>
     <slf4j.version>1.7.5</slf4j.version>
     <snappy.version>1.1.1.7</snappy.version>
-    <spark1.version>1.6.1</spark1.version>
+    <spark1.version>2.0.1</spark1.version>
     <spark2.version>2.1.0</spark2.version>
     <tephra.version>0.12.0-incubating</tephra.version>
     <tez.version>0.8.4</tez.version>
@@ -2160,14 +2160,14 @@
                       <name>package.name</name>
                       <value>${project.artifactId}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
                       <name>service.name</name>
                       <value>${original.service.name}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
@@ -2266,7 +2266,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
@@ -2369,7 +2369,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
