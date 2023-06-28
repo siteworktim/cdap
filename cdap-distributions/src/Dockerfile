@@ -14,7 +14,7 @@
 #
 # Cask is a trademark of Cask Data, Inc. All rights reserved.
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 MAINTAINER Cask Data <ops@cask.co>
 
 # update system
