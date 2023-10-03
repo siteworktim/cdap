@@ -94,7 +94,7 @@
     <apache.jdbm1.version>2.0.0-M2</apache.jdbm1.version>
     <asm.version>5.0.3</asm.version>
     <async.http.version>1.7.18</async.http.version>
-    <avro.version>1.6.2</avro.version>
+    <avro.version>1.9.0</avro.version>
     <cask.common.cli.version>0.8.0</cask.common.cli.version>
     <cask.common.version>0.7.1</cask.common.version>
     <cdap.client.version>1.2.0</cdap.client.version>
@@ -105,13 +105,13 @@
     <dumbster.version>1.6</dumbster.version>
     <fastutil.version>6.5.6</fastutil.version>
     <findbugs.jsr305.version>2.0.1</findbugs.jsr305.version>
-    <flume.version>1.2.0</flume.version>
+    <flume.version>1.9.0</flume.version>
     <geronimo.version>2.0.0</geronimo.version>
     <grok.version>0.1.0</grok.version>
     <gson.version>2.2.4</gson.version>
     <guava.version>13.0.1</guava.version>
     <guice.version>3.0</guice.version>
-    <hadoop.version>2.3.0</hadoop.version>
+    <hadoop.version>3.0.0</hadoop.version>
     <hbase10.version>1.0.1.1</hbase10.version>
     <hbase10cdh.version>1.0.0-cdh5.4.4</hbase10cdh.version>
     <hbase10cdh550.version>1.0.0-cdh5.5.0</hbase10cdh550.version>
@@ -134,7 +134,7 @@
     <mockftp.version>2.6</mockftp.version>
     <mockito.version>1.9.5</mockito.version>
     <mysql.version>5.1.21</mysql.version>
-    <netty.http.version>0.16.0</netty.http.version>
+    <netty.http.version>1.0.0</netty.http.version>
     <netty.version>3.6.6.Final</netty.version>
     <quartz.version>2.2.0</quartz.version>
     <resteasy.version>3.0.8.Final</resteasy.version>
@@ -150,7 +150,7 @@
     <tephra.version>0.12.0-incubating</tephra.version>
     <tez.version>0.8.4</tez.version>
     <thrift.version>0.9.3</thrift.version>
-    <twill.version>0.11.0</twill.version>
+    <twill.version>0.13.0</twill.version>
     <twitter4j.version>4.0.3</twitter4j.version>
     <unboundid.version>2.3.6</unboundid.version>
     <zookeeper.version>3.4.5</zookeeper.version>
@@ -2160,14 +2160,14 @@
                       <name>package.name</name>
                       <value>${project.artifactId}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
                       <name>service.name</name>
                       <value>${original.service.name}</value>
                       <regex>cdap-</regex>
-                      <replacement></replacement>
+                      <replacement/>
                       <failIfNoMatch>false</failIfNoMatch>
                     </regexPropertySetting>
                     <regexPropertySetting>
@@ -2266,7 +2266,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/rpm/cdap-service" tofile="${stage.dir}/etc/rc.d/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
@@ -2369,7 +2369,7 @@
                   </goals>
                   <configuration>
                     <target>
-                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}" />
+                      <copy file="${project.build.directory}/dist/deb/cdap-service" tofile="${stage.dir}-deb/etc/init.d/cdap-${service.name}"/>
                     </target>
                   </configuration>
                 </execution>
