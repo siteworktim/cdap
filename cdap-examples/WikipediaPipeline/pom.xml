@@ -29,7 +29,7 @@
 
   <properties>
     <app.main.class>co.cask.cdap.examples.wikipedia.WikipediaPipelineApp</app.main.class>
-    <sweble.version>2.0.0</sweble.version>
+    <sweble.version>2.1.0</sweble.version>
   </properties>
 
   <dependencies>
