@@ -272,7 +272,7 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-core</artifactId>
-      <version>1.11.133</version>
+      <version>1.12.619</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -850,7 +850,7 @@
                 </goals>
                 <configuration>
                   <target>
-                    <copy file="${project.build.directory}/examples/deploy_pom.xml" tofile="${stage.opt.dir}/examples/pom.xml" />
+                    <copy file="${project.build.directory}/examples/deploy_pom.xml" tofile="${stage.opt.dir}/examples/pom.xml"/>
                   </target>
                 </configuration>
               </execution>
@@ -866,8 +866,8 @@
                 </goals>
                 <configuration>
                   <target>
-                    <move file="${stage.artifacts.dir}/spark2_2.11/cdap-data-pipeline2_2.11-${project.version}.jar" tofile="${stage.artifacts.dir}/spark2_2.11/cdap-data-pipeline-${project.version}.jar" />
-                    <move file="${stage.artifacts.dir}/spark2_2.11/cdap-data-streams2_2.11-${project.version}.jar" tofile="${stage.artifacts.dir}/spark2_2.11/cdap-data-streams-${project.version}.jar" />
+                    <move file="${stage.artifacts.dir}/spark2_2.11/cdap-data-pipeline2_2.11-${project.version}.jar" tofile="${stage.artifacts.dir}/spark2_2.11/cdap-data-pipeline-${project.version}.jar"/>
+                    <move file="${stage.artifacts.dir}/spark2_2.11/cdap-data-streams2_2.11-${project.version}.jar" tofile="${stage.artifacts.dir}/spark2_2.11/cdap-data-streams-${project.version}.jar"/>
                   </target>
                 </configuration>
               </execution>
