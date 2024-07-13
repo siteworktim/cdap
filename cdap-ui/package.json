@@ -91,7 +91,7 @@
   "dependencies": {
     "babel-polyfill": "6.16.0",
     "body-parser": "1.14.2",
-    "bootstrap": "4.0.0-alpha.5",
+    "bootstrap": "5.0.0",
     "cdap-avsc": "4.1.12",
     "classnames": "2.2.5",
     "compression": "1.6.1",
