@@ -98,7 +98,7 @@
     "cookie-parser": "1.4.1",
     "d3": "3.5.17",
     "event-emitter": "0.3.4",
-    "express": "4.13.4",
+    "express": "4.20.0",
     "finalhandler": "0.4.1",
     "font-awesome": "4.6.3",
     "fuse.js": "2.5.0",
