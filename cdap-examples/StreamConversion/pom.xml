@@ -38,13 +38,13 @@
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
-      <version>1.7.7</version>
+      <version>1.11.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-mapred</artifactId>
       <classifier>hadoop2</classifier>
-      <version>1.7.7</version>
+      <version>1.11.4</version>
       <exclusions>
         <!-- to avoid conflicts with provided netty version from cdap -->
         <exclusion>
