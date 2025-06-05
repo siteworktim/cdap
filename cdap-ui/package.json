@@ -134,7 +134,7 @@
     "reactstrap": "3.9.4",
     "redux": "https://registry.npmjs.org/redux/-/redux-3.5.2.tgz",
     "redux-thunk": "2.0.1",
-    "request": "2.69.0",
+    "request": "2.88.2",
     "rx": "4.1.0",
     "rx-dom": "7.0.3",
     "serve-favicon": "2.3.0",
@@ -143,7 +143,7 @@
     "sockjs-client": "1.1.1",
     "svg4everybody": "2.1.7",
     "whatwg-fetch": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz",
-    "yml-loader": "1.1.0"
+    "yml-loader": "2.0.0"
   },
   "engines": {
     "node": ">= 4.5.0"
